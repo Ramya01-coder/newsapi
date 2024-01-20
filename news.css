@@ -1,0 +1,46 @@
+body
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-photo/top-view-old-french-newspaper-pieces_23-2149318857.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705622400&semt=ais);
+    width: 97vw;
+    z-index: 0;
+}
+h1
+{
+    background-color: rgb(196, 240, 225);
+    margin-bottom: 70px;
+}
+#results
+{
+ display: grid;
+ grid-template-columns:  repeat(3,auto);
+ gap: 100px;  
+ margin: 50px; 
+}
+.news-article
+{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 8px black;
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 1;
+    background-color: rgb(196, 240, 225);
+    transition: 2s ease;
+}
+.news-article:hover
+{
+    transform: scale(1.2);
+}
+.news-article img
+{
+    height: 200px;
+    width: 300px;
+}
